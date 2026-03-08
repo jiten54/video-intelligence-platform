@@ -1,0 +1,160 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "Lumina Stream",
+      "archetype": "The Bioluminescent Abyss",
+      "personality": "Intelligent, Fluid, Deep, Precise",
+      "emotional_goal": "Clarity in the depths of information"
+    },
+    "typography": {
+      "headings": {
+        "family": "Manrope, sans-serif",
+        "weights": ["600", "800"],
+        "tracking": "-0.02em",
+        "usage": "Use 'Manrope' for all headings. Bold and tight tracking for impact."
+      },
+      "body": {
+        "family": "IBM Plex Sans, sans-serif",
+        "weights": ["400", "500"],
+        "leading": "relaxed",
+        "usage": "High legibility for summaries and chat."
+      },
+      "code": {
+        "family": "JetBrains Mono, monospace",
+        "usage": "Timestamps, transcripts, and technical data."
+      },
+      "cdn_imports": [
+        "@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;600;800&display=swap');"
+      ]
+    },
+    "colors": {
+      "palette": {
+        "background": {
+          "default": "#020817",
+          "secondary": "#0f172a"
+        },
+        "primary": {
+          "DEFAULT": "#22d3ee",
+          "foreground": "#020817",
+          "glow": "0 0 20px rgba(34, 211, 238, 0.5)"
+        },
+        "secondary": {
+          "DEFAULT": "#1e293b",
+          "foreground": "#f8fafc"
+        },
+        "accent": {
+          "DEFAULT": "#0ea5e9",
+          "foreground": "#f8fafc"
+        },
+        "text": {
+          "primary": "#f8fafc",
+          "muted": "#94a3b8"
+        },
+        "border": {
+          "subtle": "rgba(148, 163, 184, 0.1)",
+          "active": "rgba(34, 211, 238, 0.3)"
+        }
+      },
+      "gradients": {
+        "hero": "radial-gradient(circle at top center, #0f172a 0%, #020817 100%)",
+        "glow_mesh": "radial-gradient(circle at 50% 50%, rgba(34, 211, 238, 0.15) 0%, transparent 50%)"
+      }
+    },
+    "spacing": {
+      "scale": "Generous. Use 2x standard spacing.",
+      "container_padding": "p-8 md:p-12 lg:p-16",
+      "grid_gap": "gap-6 md:gap-8"
+    },
+    "visual_enhancers": {
+      "glassmorphism": {
+        "className": "backdrop-blur-xl bg-slate-900/60 border border-white/10 shadow-2xl",
+        "usage": "Panels, Floating Nav, Modals"
+      },
+      "borders": {
+        "style": "1px solid",
+        "color": "border-slate-800",
+        "radius": "rounded-xl"
+      },
+      "shadows": {
+        "glow": "shadow-[0_0_15px_rgba(34,211,238,0.15)]",
+        "depth": "shadow-2xl shadow-black/50"
+      }
+    },
+    "grid_system": {
+      "dashboard_mode": {
+        "type": "Bento Grid",
+        "columns": "grid-cols-12",
+        "video_player": "col-span-12 lg:col-span-8 row-span-2",
+        "chat_panel": "col-span-12 lg:col-span-4 row-span-2",
+        "summary_panel": "col-span-12 lg:col-span-8",
+        "timestamps": "col-span-12 lg:col-span-4"
+      }
+    }
+  },
+  "component_strategies": {
+    "buttons": {
+      "primary": "bg-primary text-primary-foreground hover:bg-cyan-400 hover:shadow-[0_0_20px_rgba(34,211,238,0.4)] transition-all duration-300 font-semibold rounded-lg px-6 py-3",
+      "ghost": "text-slate-300 hover:text-white hover:bg-white/5 transition-colors"
+    },
+    "inputs": {
+      "search_bar": "bg-slate-900/50 border-2 border-slate-800 focus:border-cyan-400 focus:ring-0 rounded-xl text-lg px-6 py-4 placeholder:text-slate-500 w-full transition-all"
+    },
+    "cards": {
+      "feature": "group relative overflow-hidden rounded-2xl bg-slate-900/40 border border-slate-800 p-8 hover:border-cyan-500/30 transition-all duration-500"
+    },
+    "video_player": {
+      "wrapper": "rounded-2xl overflow-hidden shadow-2xl border border-slate-800 bg-black aspect-video relative group"
+    }
+  },
+  "assets": {
+    "images": [
+      {
+        "category": "Hero Background",
+        "url": "https://images.unsplash.com/photo-1762279388956-1c098163a2a8?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwyfHxhYnN0cmFjdCUyMGdsb3dpbmclMjBkYXRhJTIwZmxvdyUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MzAxMDc4M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract digital landscape for landing page hero background"
+      },
+      {
+        "category": "Section Background",
+        "url": "https://images.unsplash.com/photo-1762278804996-eab062703db3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxOTJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMGdsb3dpbmclMjBkYXRhJTIwZmxvdyUyMGJsdWUlMjBiYWNrZ3JvdW5kfGVufDB8fHx8MTc3MzAxMDc4M3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Abstract wavy lines for feature section background"
+      },
+      {
+        "category": "Team/About",
+        "url": "https://images.pexels.com/photos/9489396/pexels-photo-9489396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Diverse team of professionals against blue backdrop"
+      },
+      {
+        "category": "Features",
+        "url": "https://images.unsplash.com/photo-1752225494606-ae09aca08bea?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MjJ8MHwxfHNlYXJjaHw0fHxtaW5pbWFsaXN0JTIwd29ya3NwYWNlJTIwZGVzayUyMGxhcHRvcCUyMGNvZmZlZXxlbnwwfHx8fDE3NzMwMTA3ODR8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Minimalist dark workspace for 'Research Mode' feature"
+      }
+    ],
+    "icons": {
+      "library": "lucide-react",
+      "style": "Use stroke-width={1.5} for elegance. Size 20px or 24px."
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Update tailwind.config.js to use the specific colors defined in 'design_system.colors'. Extend the theme, do not replace.",
+    "2. FONTS: Import Manrope, IBM Plex Sans, and JetBrains Mono in index.css.",
+    "3. LAYOUT: Implement the 'Bento Grid' for the main app dashboard (Video, Chat, Summary).",
+    "4. VISUALS: Use the glassmorphism classes for all panels (Chat, Summary, Timestamps).",
+    "5. INTERACTION: Ensure the Video Player is the focal point. When video is playing, other elements should dim slightly (Cinema Mode logic).",
+    "6. COMPONENTS: Customize Shadcn components. Remove default radius and borders, apply 'design_system.visual_enhancers.borders'.",
+    "7. STYLE: Use the provided images for the Landing Page only. The App Interface should be data-first (video + text).",
+    "8. ANIMATION: Add 'motion-safe:animate-pulse' or subtle glows to AI-generated content to signify 'intelligence'."
+  ],
+  "universal_guidelines": [
+    "You tend to converge toward generic, 'on distribution' outputs. Avoid this.",
+    "Create depth through layered design elements with z-index hierarchy",
+    "Use glass-morphism effects with backdrop filters (12-24px blur)",
+    "You MUST NOT apply universal transition. Eg: transition: all. This results in breaking transforms.",
+    "You MUST NOT center align the app container. This disrupts the human natural reading flow of text",
+    "Every interaction needs micro-animations - hover states, transitions.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Prioritize using pre-existing components from src/components/ui when applicable",
+    "Components MUST use named exports (export const ComponentName = ...)",
+    "Pages MUST use default exports (export default function PageName() {...})",
+    "Use 'sonner' for toasts"
+  ]
+}
