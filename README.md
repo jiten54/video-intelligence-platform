@@ -1,4 +1,6 @@
 # Intelligent Video Understanding Platform
+<img width="1700" height="874" alt="Screenshot 2026-04-02 132547" src="https://github.com/user-attachments/assets/486948ac-6404-4d70-8147-422f20fc7847" />
+<img width="1874" height="777" alt="Screenshot 2026-04-02 132807" src="https://github.com/user-attachments/assets/ba612ab5-a46d-4172-9979-a16c1b50e5fd" />
 
 A system for transforming long-form video content into structured, searchable, and actionable knowledge using modern AI and natural language processing.
 
